@@ -24,7 +24,7 @@ defmodule ElixirLS.Utils.Mixfile do
   # Type "mix help compile.app" for more information
   def application do
     # Specify extra applications you'll use from Erlang/Elixir
-    [applications: []]
+    [extra_applications: []]
   end
 
   # Dependencies can be Hex packages:
@@ -41,6 +41,9 @@ defmodule ElixirLS.Utils.Mixfile do
   #
   # Type "mix help deps" for more examples and options
   defp deps do
-    [{:jason, "~> 1.0"}, {:mix_task_archive_deps, github: "JakeBecker/mix_task_archive_deps"}]
+    [
+      {:jason, "~> 1.1"},
+      {:mix_task_archive_deps, github: "JakeBecker/mix_task_archive_deps"}
+    ]
   end
 end
